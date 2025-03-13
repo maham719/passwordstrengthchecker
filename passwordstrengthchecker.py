@@ -67,6 +67,7 @@ def generate_password(Length,use_digits,use_special):
 
     return ' '.join(random.choice(characters) for _ in range(Length))
 
+st.subheader("Generate Password")
 
 Length= st.slider("Select Password Length" , min_value=6 , max_value=20, value=12)
 use_digits=st.checkbox("Include Digits")
